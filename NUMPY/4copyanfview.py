@@ -18,5 +18,6 @@ arr=np.array([1,2,3,4,5])
 x=arr.copy()
 y=arr.view()
 
-print(x.base)
-print(y.base)
+print(x.base) #output None
+
+print(y.base) #output [1,2,3,4,5]
