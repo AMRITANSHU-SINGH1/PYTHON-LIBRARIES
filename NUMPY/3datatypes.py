@@ -76,3 +76,24 @@ dtype	     Meaning	Size	Range
 
 #What if a Value Can Not Be Converted?
 #If a type is given in which elements can't be casted then NumPy will raise a ValueError.
+
+# CONVERRTING THE DATA TYPE 
+# USING .astype()
+arr=np.array([1.1,2.1,3.1])
+arr2=arr.astype('i')
+# or 
+arr3=arr.astype(int)
+print(arr)
+print(arr2)
+print(arr3)
+
+
+
+# convertin it to the boolean
+
+arr=np.array([1.1,0.1,3.2])
+arr2=arr.astype(bool)
+
+print(arr)
+print(arr2)
+
