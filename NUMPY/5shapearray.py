@@ -7,6 +7,7 @@ import numpy as np
 
 # example 2
 arr =np.array([1, 2, 3, 4], ndmin=5)
-
+#The shape of an array is the number of elements in each dimension.
 print(arr)
 print('shape of array :', arr.shape)
+
