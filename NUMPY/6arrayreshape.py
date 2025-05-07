@@ -32,3 +32,43 @@ view[0][0]=100
 
 print('view array:',view)
 print('origianl:',exapl)
+
+# unknown dimensions 
+''' You are allowed to have one "unknown" dimension.
+
+Meaning that you do not have to specify an exact number for one of the dimensions in the reshape method.
+
+Pass -1 as the value, and NumPy will calculate this number for you.
+
+Example'''
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+
+newarr = arr.reshape(2, 2, -1)
+
+print(newarr) 
+''' OUTPUT : [ [[1 2] [3 4]] [[5 6] [7 8]] ]
+'''
+
+'''Flattening the arrays
+Flattening array means converting a multidimensional array into a 1D array.
+
+We can use reshape(-1) to do this.
+
+Example
+Convert the array into a 1D array:'''
+
+import numpy as np
+
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+newarr = arr.reshape(-1)
+
+print(newarr)
+
+# example 2
+arr2=np.array([[1, 2, 3], [4, 5, 6]])
+# convert this into 1D without using -1
+nw=arr2.reshape(6)  # output [1 2 3 4 5 6]
